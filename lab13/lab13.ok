@@ -1,0 +1,33 @@
+{
+    "name": "Lab 13",
+    "endpoint": "cal/cs61a/su16/lab13",
+    "src": [
+        "lab13.py"
+    ],
+    "tests": {
+        "lab13.py:hailstone": "doctest",
+        "lab13_extra.py:countdown": "doctest",
+        "lab13_extra.py:Countdown": "doctest",
+        "lab13_extra.py:scale": "doctest",
+        "lab13_extra.py:merge": "doctest",
+        "lab13_extra.py:pairs": "doctest",
+        "lab13_extra.py:PairsIterator": "doctest",
+        "lab13_extra.py:remainders_generator": "doctest",
+        "lab13_extra.py:chef": "doctest",
+        "tests/generators.py": "ok_test",
+        "tests/coroutines.py": "ok_test"
+    },
+    "default_tests": [
+        "generators",
+        "coroutines",
+        "hailstone"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "unlock",
+        "grading",
+        "analytics",
+        "backup"
+    ]
+}
