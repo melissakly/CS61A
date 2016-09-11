@@ -1,0 +1,23 @@
+{
+    "name": "Quiz 6",
+    "endpoint": "cal/cs61a/su16/quiz06",
+    "src": [
+        "quiz06.py"
+    ],
+    "tests": {
+        "quiz06.py": "doctest"
+    },
+    "default_tests": [
+        "Player",
+        "Game",
+        "AggressivePlayer",
+        "CautiousPlayer"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "analytics",
+        "grading",
+        "backup"
+    ]
+}

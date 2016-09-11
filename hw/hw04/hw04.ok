@@ -1,0 +1,32 @@
+{
+    "name": "Homework 4",
+    "endpoint": "cal/cs61a/su16/hw04",
+    "src": [
+        "hw04.py"
+    ],
+    "tests": {
+        "tests/interval.py": "ok_test",
+        "tests/mul_interval.py": "ok_test",
+        "tests/sub_interval.py": "ok_test",
+        "tests/div_interval.py": "ok_test",
+        "tests/check_par.py": "ok_test",
+        "tests/quadratic.py": "ok_test",
+        "tests/polynomial.py": "ok_test"
+    },
+    "default_tests": [
+        "interval",
+        "mul_interval",
+        "sub_interval",
+        "div_interval",
+        "check_par",
+        "quadratic"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "analytics",
+        "unlock",
+        "grading",
+        "backup"
+    ]
+}

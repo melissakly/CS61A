@@ -1,0 +1,31 @@
+{
+    "name": "Homework 8",
+    "endpoint": "cal/cs61a/su16/hw08",
+    "src": [
+        "hw08.scm"
+    ],
+    "tests": {
+        "tests/cadr-caddr.py": "ok_test",
+        "tests/ordered.py": "ok_test",
+        "tests/nodots.py": "ok_test",
+        "tests/contains.py": "ok_test",
+        "tests/add.py": "ok_test",
+        "tests/intersect.py": "ok_test",
+        "tests/union.py": "ok_test",
+        "tests/in.py": "ok_test",
+        "tests/as-list.py": "ok_test",
+        "tests/derive-sum.py": "ok_test",
+        "tests/derive-product.py": "ok_test",
+        "tests/make-exp.py": "ok_test",
+        "tests/derive-exp.py": "ok_test"
+    },
+    "protocols": [
+        "restore",
+        "file_contents",
+        "unlock",
+        "grading",
+        "analytics",
+        "hinting",
+        "backup"
+    ]
+}

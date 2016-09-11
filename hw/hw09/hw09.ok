@@ -1,0 +1,24 @@
+{
+    "name": "Homework 9",
+    "endpoint": "cal/cs61a/su16/hw09",
+    "src": [
+        "hw09.logic"
+    ],
+    "tests": {
+        "tests/unique.py": "ok_test",
+        "tests/add-to-all.py": "ok_test",
+        "tests/sublists.py": "ok_test"
+    },
+    "default_tests": [
+        "unique",
+        "add-to-all",
+        "sublists"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "grading",
+        "analytics",
+        "backup"
+    ]
+}

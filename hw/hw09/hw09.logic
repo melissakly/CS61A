@@ -1,0 +1,50 @@
+; Q1
+
+(fact (in ?elem (?elem . ?rest)))
+(fact (in ?elem (?first . ?rest))
+      (in ?elem ?rest))
+
+(fact (unique ()))
+(fact (unique (?f . ?r))		
+		(not (in ?f ?r))
+		(unique ?r))
+
+
+; (query (unique (1 2 3)))
+; expect Success!
+; (query (unique ()))
+; expect Success!
+; (query (unique (1 2 3 3 4)))
+; expect Failed.
+; (query (unique (1 2 3 1)))
+; expect Failed.
+
+; Q2
+
+(fact (add-to-all ?item () ()))
+(fact (add-to-all ?item (?a . ?b) ((?item . ?a) . ?c))
+	(add-to-all ?item ?b ?c))
+
+; (query (add-to-all a ((b) (c d)) ((a b) (a c d))))
+; expect Success!
+; (query (add-to-all a ((b c) (b) (foo)) ?what))
+; expect Success! ; what: ((a b c) (a b) (a foo))
+; (query (add-to-all ?what ((c) (d e) ()) ((b c) (b d e) (b))))
+; expect Success! ; what: b
+; (query (add-to-all ?what ?list ((b c) (d e) (b))))
+; expect Failed.
+
+; Q3
+
+(fact (append () ?a ?a))
+(fact (append (?x . ?r) ?b (?x . ?c))
+      (append ?r ?b ?c))
+
+(fact (sublists () (())))
+(fact (sublists (?first . ?rest) ?rest2)
+	  (sublists ?rest ?restlist)
+	  (add-to-all ?first ?restlist ?item)
+	  (append ?restlist ?item ?rest2))
+
+; (query (sublists (1 2 3) ?subs))
+; expect Success! ; subs: (() (3) (2) (2 3) (1) (1 3) (1 2) (1 2 3))
