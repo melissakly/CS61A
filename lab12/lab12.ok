@@ -1,0 +1,28 @@
+{
+    "name": "Lab 12",
+    "endpoint": "cal/cs61a/su16/lab12",
+    "src": [
+        "lab12.logic",
+        "lab12_extra.logic"
+    ],
+    "tests": {
+        "tests/last-element.py": "ok_test",
+        "tests/firsts.py": "ok_test",
+        "tests/rests.py": "ok_test",
+        "tests/boxes.py": "ok_test",
+        "tests/rows.py": "ok_test",
+        "tests/cols.py": "ok_test",
+        "tests/solve.py": "ok_test"
+    },
+    "default_tests": [
+        "last-element"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "unlock",
+        "grading",
+        "analytics",
+        "backup"
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "name": "Lab 9",
+    "endpoint": "cal/cs61a/su16/lab09",
+    "src": [
+        "lab09.py",
+        "lab09_extra.py",
+        "link.py"
+    ],
+    "tests": {
+        "tests/does_it_work.py": "ok_test",
+        "tests/link.py": "ok_test",
+        "tests/restart.py": "ok_test",
+        "tests/odds_evens.py": "ok_test",
+        "tests/add.py": "ok_test",
+        "tests/reversed.py": "ok_test",
+        "tests/str.py": "ok_test",
+        "lab09.py": "doctest",
+        "lab09_extra.py:IteratorRestart": "doctest",
+        "lab09_extra.py:Str": "doctest"
+    },
+    "default_tests": [
+        "ScaleIterator"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "analytics",
+        "unlock",
+        "grading",
+        "backup"
+    ]
+}

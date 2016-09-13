@@ -1,0 +1,27 @@
+{
+    "name": "Lab 7",
+    "endpoint": "cal/cs61a/su16/lab07",
+    "src": [
+        "lab07.py"
+    ],
+    "tests": {
+        "lab07.py:abundant": "doctest",
+        "lab07.py:same_hailstone": "doctest",
+        "lab07.py:piecewise": "doctest",
+        "lab07.py:smooth": "doctest",
+        "lab07.py:n_fold_smooth": "doctest",
+        "lab07.py:is_palindrome": "doctest",
+        "lab07.py:deep_len": "doctest",
+        "lab07.py:make_to_string": "doctest",
+        "lab07.py:tree_map": "doctest",
+        "lab07.py:add_trees": "doctest"
+    },
+    "protocols": [
+        "restore",
+        "file_contents",
+        "unlock",
+        "grading",
+        "analytics",
+        "backup"
+    ]
+}

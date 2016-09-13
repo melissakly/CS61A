@@ -1,0 +1,9 @@
+; Q1
+(fact (append () ?b ?b))
+(fact (append (?a . ?r) ?y (?a . ?z))
+      (append ?r ?y ?z))
+
+; Q2
+(fact (last-element (?x) ?x))
+(fact (last-element (?f . ?r) ?x)
+		(last-element ?r ?x))

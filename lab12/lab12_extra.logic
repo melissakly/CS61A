@@ -1,0 +1,40 @@
+; Q3
+; Define the firsts relation here!
+
+; Q4
+; Define the rests relation here!
+
+; Q5-9
+(fact (insert ?a ?r (?a . ?r)))
+(fact (insert ?a (?b . ?r) (?b . ?s)) (insert ?a ?r ?s))
+
+(fact (anagram () ()))
+(fact (anagram (?a . ?r) ?b) (insert ?a ?s ?b) (anagram ?r ?s))
+
+(fact (boxes ((?a ?b ?c ?d)
+             (?e ?f ?g ?h)
+             (?i ?j ?k ?l)
+             (?m ?n ?o ?p)))
+    (anagram (?a ?b ?e ?f) (1 2 3 4))
+    ; YOUR CODE HERE
+                                    )
+
+(fact (rows ()))
+(fact (rows (?x . ?xs))
+      ; YOUR CODE HERE
+      )
+
+(fact (cols (() () () ())))
+; YOUR CODE HERE
+
+(fact (solve ?grid)
+      ; YOUR CODE HERE
+      )
+
+; Template for solving Sudoku, don't run this without
+; replacing some variables with numbers!
+
+; (query (solve ((?a ?b ?c ?d)
+;                (?e ?f ?g ?h)
+;                (?i ?j ?k ?l)
+;                (?m ?n ?o ?p))))

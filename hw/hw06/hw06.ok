@@ -1,0 +1,26 @@
+{
+    "name": "Homework 6",
+    "endpoint": "cal/cs61a/su16/hw06",
+    "src": [
+        "hw06.py"
+    ],
+    "tests": {
+        "hw06.py": "doctest"
+    },
+    "default_tests": [
+        "make_withdraw",
+        "make_joint",
+        "VendingMachine",
+        "MissManners",
+        "make_account_class"
+    ],
+    "protocols": [
+        "restore",
+        "file_contents",
+        "unlock",
+        "grading",
+        "analytics",
+        "hinting",
+        "backup"
+    ]
+}
