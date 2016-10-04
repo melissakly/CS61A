@@ -5,7 +5,7 @@ This does not work because there are no routes that match a GET request to "/tea
 
 
 What type of request did your browser just perform?
-GET request
+GET request.
 
 
 Go back to `localhost:3000/teachers/new`; submit the form again. What URL do you end up at?
