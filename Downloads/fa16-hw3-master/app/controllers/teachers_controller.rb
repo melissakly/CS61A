@@ -1,7 +1,7 @@
 class TeachersController < ApplicationController
-	def home
-	end
-	
+  def home
+  end
+
   def new
     @placeholder_course = '186'
   end
