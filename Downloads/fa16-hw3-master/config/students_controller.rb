@@ -3,7 +3,9 @@ class StudentsController < ApplicationController
 	end
 	
   def new
-    @placeholder_course = '186'
+    @placeholder_full_name = "Melissa Ly"
+    @placeholder_course = "rails"
+    @placeholder_grade_level = "soph"
   end
 
   def create
